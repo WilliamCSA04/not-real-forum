@@ -2,21 +2,17 @@ import React, { Component } from 'react';
 import 'whatwg-fetch';
 import logo from '../images/logo.svg';
 import '../css/App.css';
+import { callApi } from '../actions/api'
 class App extends Component {
   state = {
     response: ''
   };
   componentDidMount() {
-    this.callApi()
+    callApi()
       .then(res => this.setState({ response: res.express }))
       .catch(err => console.log(err));
   }
-  callApi = async () => {
-    const response = await fetch('/api/hello');
-    const body = await response.json();
-    if (response.status !== 200) throw Error(body.message);
-    return body;
-  };
+  
   render() {
     return (
       <div className="App">
