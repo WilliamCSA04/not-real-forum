@@ -1,0 +1,9 @@
+@import "Global.scss";
+
+.btn{
+    border: none;
+    border-radius: 1em;
+    min-width: 7em;
+    min-height: 1.5em;
+    pointer-events: none;
+}
