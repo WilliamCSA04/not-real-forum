@@ -1,8 +1,11 @@
+$black: #1D1F23;
+
 @import "Grid.scss";
 
 body{
     margin: 0;
     padding: 0;
+    background-color: $black; 
 }
 
 #root{
