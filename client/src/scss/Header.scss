@@ -1,4 +1,5 @@
 $orange: #FF6600;
+$black: #1D1F23;
 
 @import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope');
 
@@ -12,4 +13,5 @@ $orange: #FF6600;
     margin-top: 1%;
     margin-bottom: 0;
     font-family: 'Annie Use Your Telescope';
+    color: $black;
 }
