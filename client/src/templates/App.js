@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import 'whatwg-fetch';
 import logo from '../images/logo.svg';
-import '../css/App.css';
 import { callApi } from '../actions/api'
 class App extends Component {
   
