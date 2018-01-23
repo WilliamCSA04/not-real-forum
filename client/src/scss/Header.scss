@@ -1,0 +1,15 @@
+$orange: #FF6600;
+
+@import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope');
+
+.header{
+    background-color: $orange;
+    height: 4em;
+    display: table;
+}
+
+.header-title{
+    margin-top: 1%;
+    margin-bottom: 0;
+    font-family: 'Annie Use Your Telescope';
+}
