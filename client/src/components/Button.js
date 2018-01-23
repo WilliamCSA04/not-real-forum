@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import "../scss/Button.scss"
 
@@ -6,9 +6,12 @@ class Button extends Component {
 
     render(){
         return(
-            <Fragment>
-                <input type="button" className={`btn ${this.props.classesNames}`} name={this.props.name} value={this.props.value} onClick={this.props.onClick} />
-            </Fragment>
+            <input type="button" 
+                className={`btn ${this.props.classesNames}`} 
+                name={this.props.name} 
+                value={this.props.value} 
+                onClick={this.props.onClick}
+            />
         );
     }
 
