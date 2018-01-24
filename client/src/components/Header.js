@@ -6,7 +6,7 @@ class Header extends Component {
     return (
       <div className="col-12 header">
       <div className="row">
-        <div className="col-11 col-1-fill">
+        <div className="col-11 col-1-fill vertical-align-middle">
             <h1 className="header-title">Not real forum</h1>
         </div>
       </div>
