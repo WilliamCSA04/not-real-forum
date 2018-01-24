@@ -1,5 +1,4 @@
 @import "Global.scss";
-@import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope');
 
 .header{
     background-color: $orange;
@@ -10,6 +9,6 @@
 .header-title{
     margin-top: 1%;
     margin-bottom: 0;
-    font-family: 'Annie Use Your Telescope';
+    font-family: $annie;
     color: $black;
 }
