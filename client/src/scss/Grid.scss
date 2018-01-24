@@ -180,6 +180,11 @@
   }
   
   @media all and (max-width: 800px) {
+
+    .row{
+      display: block;
+    }
+
     .col-1 {
       width: 33.33%;
     }
