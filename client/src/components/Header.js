@@ -16,7 +16,7 @@ class Header extends Component {
         </div>
         <div className="col-2 col-4-offset vertical-align-middle">
           <div>
-            <Button value="login" classesNames="btn-dark" onClick={this.onClick}/>
+            <Button value="login" className="btn-dark" onClick={this.onClick}/>
           </div>
         </div>
       </div>
