@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import "../scss/Header.scss"
 import Button from './Button';
 class Header extends Component {
+
+  onClick = () => {
+    alert("Not implemented yet");
+  }
   
   render() {
     return (
@@ -12,7 +16,7 @@ class Header extends Component {
         </div>
         <div className="col-2 col-4-offset vertical-align-middle">
           <div>
-            <Button value="login" classesNames="btn-dark"/>
+            <Button value="login" classesNames="btn-dark" onClick={this.onClick}/>
           </div>
         </div>
       </div>
