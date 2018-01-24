@@ -10,3 +10,12 @@ body{
 #root{
     width: 100%;
 }
+
+.vertical-align-middle{
+    height: inherit;
+    display: table;
+    * {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
