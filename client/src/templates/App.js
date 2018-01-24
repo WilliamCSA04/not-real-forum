@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { callApi } from '../actions/api'
 import Header from '../components/Header';
 class App extends Component {
   
