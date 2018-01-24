@@ -18,6 +18,15 @@
     /*-- our gutter -- */
     /*         padding: 12px;  */
   }
+
+  .vertical-align-middle{
+    height: inherit;
+    display: table;
+    * {
+      display: table-cell;
+      vertical-align: middle
+    }
+  }
   
   .col-1 {
     width: 8.33%;

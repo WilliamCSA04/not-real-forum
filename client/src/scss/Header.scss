@@ -4,11 +4,14 @@
     background-color: $orange;
     height: 4em;
     display: table;
+    .row{
+        height: inherit;
+    }
 }
 
 .header-title{
-    margin-top: 1%;
     margin-bottom: 0;
+    margin-top: 0;
     font-family: $annie;
     color: $black;
 }
