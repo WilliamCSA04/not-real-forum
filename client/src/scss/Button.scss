@@ -6,7 +6,8 @@
     min-width: 7em;
     min-height: 1.5em;
     cursor: pointer;
+    
     &:active {
-        transform: scale(0.9);
+        transform: scale(0.95);
     }
 }
