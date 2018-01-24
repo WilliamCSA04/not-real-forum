@@ -24,4 +24,8 @@ Button.propTypes = {
     name: PropTypes.string,
 }
 
+Button.defaultProps = {
+    classesNames: ""
+}
+
 export default Button;
