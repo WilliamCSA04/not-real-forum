@@ -10,10 +10,10 @@ class Header extends Component {
   render() {
     return (
       <div className="row header">
-        <div className="col-5 col-1-offset vertical-align-middle">
+        <div className="col-10 vertical-align-middle">
             <h1 className="header-title">Not real forum</h1>
         </div>
-        <div className="col-2 col-4-offset vertical-align-middle">
+        <div className="col-2 vertical-align-middle">
           <div>
             <Button value="sign in" className="btn-dark" onClick={this.onClick}/>
           </div>
