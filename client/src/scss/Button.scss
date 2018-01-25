@@ -13,17 +13,17 @@
 }
 
 .btn-dark{
-    background-color: $black;
+    background-color: $dark;
     color: $gray;
     &:active {
-        background-color: black;
+        background-color: $hoverdark;
     }
 }
 
 .btn-dark-secondary{
-    background-color: #585858;
-    color: black;
+    background-color: $darkgray;
+    color: $hoverdark;
     &:active {
-        background-color: #363636;
+        background-color: $hoverdarkgray;
     }
 }
