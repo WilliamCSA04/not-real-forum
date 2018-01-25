@@ -18,6 +18,9 @@ class Header extends Component {
           <div>
             <Button value="login" className="btn-dark" onClick={this.onClick}/>
           </div>
+          <div>
+            <Button value="sign up" className="btn-dark" onClick={this.onClick}/>
+          </div>
         </div>
       </div>
       </div>
