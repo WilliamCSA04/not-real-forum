@@ -1,9 +1,14 @@
 @import "Global.scss";
 
+$headerHeight: 4em;
+
 .header{
     background-color: $orange;
-    height: 4em;
+    height: $headerHeight;
     display: table;
+    &:last-child {
+        height: $headerHeight;
+    }
 }
 
 .header-title{

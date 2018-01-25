@@ -9,8 +9,7 @@ class Header extends Component {
   
   render() {
     return (
-      <div className="col-12 header">
-      <div className="row">
+      <div className="row header">
         <div className="col-5 col-1-offset vertical-align-middle">
             <h1 className="header-title">Not real forum</h1>
         </div>
@@ -22,7 +21,6 @@ class Header extends Component {
             <Button value="sign up" className="btn-dark-secondary" onClick={this.onClick}/>
           </div>
         </div>
-      </div>
       </div>
     );
   }
