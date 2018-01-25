@@ -19,3 +19,11 @@
         background-color: black;
     }
 }
+
+.btn-dark-secondary{
+    background-color: #585858;
+    color: black;
+    &:active {
+        background-color: #363636;
+    }
+}
