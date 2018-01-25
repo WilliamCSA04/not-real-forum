@@ -16,4 +16,9 @@ $headerHeight: 4em;
     margin-top: 0;
     font-family: $annie;
     color: $dark;
+    padding-left: 3em;
+    @media all and (max-width: 800px) {
+        padding-left: 0;
+        text-align: center;
+    } 
 }
