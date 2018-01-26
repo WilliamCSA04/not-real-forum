@@ -17,7 +17,7 @@ $headerHeight: 4em;
     font-family: $annie;
     color: $dark;
     padding-left: 3em;
-    @media all and (max-width: 800px) {
+    @media all and (max-width: $tabletsize) {
         padding-left: 0;
         text-align: center;
     } 

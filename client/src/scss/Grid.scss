@@ -179,7 +179,7 @@
   
   }
   
-  @media all and (max-width: 800px) {
+  @media all and (max-width: $tabletsize) {
 
     .row{
       display: block;
@@ -327,7 +327,7 @@
     }
   }
   
-  @media all and (max-width: 650px) {
+  @media all and (max-width: $phonesize) {
     .col-1 {
       width: 50%;
     }
