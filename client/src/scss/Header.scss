@@ -12,6 +12,15 @@ $spacebetweenbuttons: 1em;
     }
 }
 
+.row{
+    @media all and (max-width: $tabletsize) and (min-width: $phonesize) {
+        display: flex !important;
+        div{
+            width: 50% !important;
+        }
+    }
+}
+
 .header-title{
     margin-bottom: 0;
     margin-top: 0;
