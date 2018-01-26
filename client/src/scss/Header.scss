@@ -8,7 +8,12 @@ $spacebetweenbuttons: 1em;
     height: $headerHeight;
     display: table;
     &:last-child {
-        height: $headerHeight;
+        height: $headerHeight;        
+    }
+    div:last-child {
+        @media all and (max-width: $phonesize) {
+            background-color: $orange;
+        }
     }
 }
 
