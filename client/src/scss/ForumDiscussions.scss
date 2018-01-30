@@ -1,0 +1,11 @@
+@import "Global.scss";
+
+$backgroundColor: #2d2e35;
+
+.discussion-list{
+    div{
+        border: $hoverdarkgray solid 1px;
+        background-color: $backgroundColor;
+    }
+    color: $brightfontcolor;
+}
