@@ -21,6 +21,9 @@ class ForumDiscussions extends Component {
 
     mapDiscussions = () => {
         const discussions = this.state.discussions;
+        if(discussions.length == 0){
+            return (<p>Não há discussão no forum</p>)
+        }
         const discussionsToRender = discussions.map(discussion => {
             return (
                 <Discussion 
@@ -41,7 +44,9 @@ class ForumDiscussions extends Component {
         const discussions = this.mapDiscussions();
         return (
             <div className="row">
-            {discussions}
+                <div className="col-8 col-4-fill">
+                    {discussions}
+                </div>
             </div>
         );
     }
