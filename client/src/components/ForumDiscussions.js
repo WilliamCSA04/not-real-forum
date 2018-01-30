@@ -11,13 +11,14 @@ class ForumDiscussions extends Component {
     }
 
     componentWillMount(){
-        const orderFunction = this.props.order;
-        const discussions = orderFunction(this.state.discussions);
-        this.setState({ discussions });
+        if(this.props.discussions.length > 1){
+            const orderFunction = this.props.order;
+            const discussions = orderFunction(this.props.discussions);
+            this.setState({ discussions });
+        }
     }
 
     render() {
-        {console.log(this.state)}
         return (
             <div>
                
@@ -29,14 +30,10 @@ class ForumDiscussions extends Component {
 ForumDiscussions.defaultProps = {
     discussions: [],
     order: (discussions) => {
-        if(discussions.length > 0){
-            const ordenedDiscussions = discussions.sort((firstItem, secondItem) => {
-                return firstItem.date - secondItem.date;
-            })
-            return ordenedDiscussions;
-        }else{
-            return discussions;
-        }
+        const ordenedDiscussions = discussions.sort((firstItem, secondItem) => {
+            return firstItem.date - secondItem.date;
+        })
+        return ordenedDiscussions; 
     }
 }
 
