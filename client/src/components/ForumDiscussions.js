@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Discussion from './Discussion';
 
 class ForumDiscussions extends Component {
 
@@ -18,10 +19,29 @@ class ForumDiscussions extends Component {
         }
     }
 
+    mapDiscussions = () => {
+        const discussions = this.state.discussions;
+        const discussionsToRender = discussions.map(discussion => {
+            return (
+                <Discussion 
+                    title={discussion.title}
+                    categories={discussion.categories}
+                    views={discussion.views}
+                    commentaries={discussion.commentaries}
+                    tags={discussion.tags}
+                    createdAt={discussion.createdAt}
+                    creator={discussion.creator}
+                />
+            )
+        });
+        return discussionsToRender;     
+    }
+
     render() {
+        const discussions = this.mapDiscussions();
         return (
-            <div>
-               
+            <div className="row">
+            {discussions}
             </div>
         );
     }
