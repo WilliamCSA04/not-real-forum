@@ -24,7 +24,7 @@ class ForumDiscussions extends Component {
 }
 
 ForumDiscussions.defaultProps = {
-    discussions: [{date: 2}, {date: 1}],
+    discussions: [],
     order: (discussions) => {
         if(discussions.length > 0){
             const ordenedDiscussions = discussions.sort((firstItem, secondItem) => {
