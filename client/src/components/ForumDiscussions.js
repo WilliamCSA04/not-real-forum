@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Discussion from './Discussion';
+import "../scss/ForumDiscussions.scss";
 
 class ForumDiscussions extends Component {
 
@@ -44,7 +45,7 @@ class ForumDiscussions extends Component {
         const discussions = this.mapDiscussions();
         return (
             <div className="row">
-                <div className="col-8 col-4-fill">
+                <div className="col-8 col-4-fill discussion-list">
                     {discussions}
                 </div>
             </div>
