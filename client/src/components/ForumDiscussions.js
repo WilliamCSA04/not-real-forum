@@ -5,12 +5,15 @@ class ForumDiscussions extends Component {
 
     constructor(props){
         super(props);
-        this.state = this.props.discussions;
+        this.state = {
+            discussions: this.props.discussions,
+        };
     }
 
     componentWillMount(){
         const orderFunction = this.props.order;
-        this.setState(orderFunction(this.state));
+        const discussions = orderFunction(this.state.discussions);
+        this.setState({ discussions });
     }
 
     render() {
