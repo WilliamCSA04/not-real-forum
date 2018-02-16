@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import Discussion from './Discussion';
 import "../scss/ForumDiscussions.scss";
 
@@ -20,14 +19,19 @@ class ForumDiscussions extends Component {
         }
     }
 
+    componentWillReceiveProps(nextProps) {
+        this.setState(nextProps)
+    }
+
     mapDiscussions = () => {
         const discussions = this.state.discussions;
         if(discussions.length == 0){
             return (<p>Não há discussão no forum</p>)
         }
-        const discussionsToRender = discussions.map(discussion => {
+        const discussionsToRender = discussions.map((discussion, index) => {
             return (
-                <Discussion 
+                <Discussion
+                    key={index}
                     title={discussion.title}
                     categories={discussion.categories}
                     views={discussion.views}
